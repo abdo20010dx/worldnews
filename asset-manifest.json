@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/worldnews/static/css/main.f855e6bc.css",
+    "main.js": "/worldnews/static/js/main.1b6e12ba.js",
+    "static/js/453.7e5e9e36.chunk.js": "/worldnews/static/js/453.7e5e9e36.chunk.js",
+    "static/media/eagle-face.svg": "/worldnews/static/media/eagle-face.33c1943950447b536b465004565039fc.svg",
+    "index.html": "/worldnews/index.html",
+    "main.f855e6bc.css.map": "/worldnews/static/css/main.f855e6bc.css.map",
+    "main.1b6e12ba.js.map": "/worldnews/static/js/main.1b6e12ba.js.map",
+    "453.7e5e9e36.chunk.js.map": "/worldnews/static/js/453.7e5e9e36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.1b6e12ba.js"
+  ]
+}
