@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import PrimarySearchAppBar from './components/appbar/page';
+import { ThemeProvider } from '@mui/material';
+import theme from './global/theme';
+import { DataCards } from './components/DataCards/page';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <HashRouter>
+      <ThemeProvider theme={theme}>
+        <PrimarySearchAppBar />
+        <Routes>
+          <Route path="/" element={<DataCards />} />
+          <Route index element={<DataCards />} />
+          <Route path="*" element={<DataCards />} />
+        </Routes>
+      </ThemeProvider>
+    </HashRouter>
+
   );
 }
-
 export default App;
